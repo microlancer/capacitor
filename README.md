@@ -30,3 +30,7 @@ To facilitate quick and easy payments/withdrawals the LNURL specification will b
 ## Fees and Capacitor Markets
 
 Since anyone can run a capactor node, the best ones will be well-mantained, have good uptime, good support services, reputable, and have reasonable fees. It is important that sender/receiver use the same capacitor node since the capacitor is the escrow/signatory of the 2-of-3 multisig. However, there may be a way in the future to construct a capacitor network, where there is no single point of failure, and capacitor transactions are held by multiple capacitor nodes in a path chain or route. This may increase privacy and compatibility, but this is a much more advanced system, and outside the scope of this initial concept.
+
+## Issues
+
+Privacy is a main concern here, since the capactor knows the two parties and it unwires the onion-routing work done in Lightning Network to increase anonymity. So it is yet to be determined if privacy can be preserved somehow. This could be part of the multiple-capacitor-routing system or perhaps wrapped in messaging the way the "experimental offers feature" in c-lightning currently works.
