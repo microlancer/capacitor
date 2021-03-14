@@ -25,7 +25,7 @@ As an additional feature, capacitor provides an API and HTTP callback to let som
 
 ## Easy payments and withdrawals
 
-To facilitate quick and easy payments/withdrawals the LNURL specification will be used together with wallets to avoid the need to copy-and-paste Lightning Network invoices in the user interface. There will also be APIs for programmatic payments/withdrawals for more advanced wallet services.
+To facilitate quick and easy payments/withdrawals the LNURL specification will be used together with wallets to avoid the need to copy-and-paste Lightning Network invoices in the user interface. There will also be APIs for programmatic payments/withdrawals for more advanced wallet services. Also, for more seamless operation within wallets, a wallet might be able to first query if the recipient is currently online, and simply do a direct LN payment first. If they are not online, then it can fallback to a capacitor payment.
 
 ## Fees and Capacitor Markets
 
